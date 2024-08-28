@@ -14,7 +14,7 @@ export default function HomeScreen() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://10.222.244.91:5247/api/SampleVisual/GetStagingSamples', {
+        const response = await fetch('https://samplevisualdemocorewebapi-fwf5ezc9akacfhg5.eastus-01.azurewebsites.net/api/SampleVisual/GetStagingSamples', {
           method: 'GET',
         });
 
@@ -34,7 +34,7 @@ export default function HomeScreen() {
 
   
   const handleButtonClick = () => {
-    fetch('http://10.222.244.91:5247/api/SampleVisual/ExecuteSql', {
+    fetch('https://samplevisualdemocorewebapi-fwf5ezc9akacfhg5.eastus-01.azurewebsites.net/api/SampleVisual/ExecuteSql', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
